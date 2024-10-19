@@ -1,0 +1,46 @@
+
+---
+- name: Cross Browser Testing with Ansible
+  hosts: all
+  become: yes
+  vars:
+    repo_url: "https://github.com/YasinDeger48/DemoTestForAnsible"
+    browser_map:
+      host1: "chromium"
+      host2: "firefox"
+      host3: "webkit"
+
+  tasks:
+    - name: Docker Yükle
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Docker Servisini Başlat
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Git Repo'sunu Klonla
+      git:
+        repo: "{{ repo_url }}"
+        dest: /project
+        version: master
+        update: yes
+
+    - name: Dockerfile Oluştur
+      copy:
+        dest: /project/Dockerfile
+        content: |
+          FROM maven:3.8.5-openjdk-17
+          WORKDIR /app
+          COPY . .
+          RUN mvn clean install
+
+    - name: Testleri Docker İçinde Çalıştır
+      shell: |
+        docker build -t java-test-runner /project
+        docker run --rm java-test-runner mvn test -Dwebdriver.browser={{ browser_map[inventory_hostname] }}
+      environment:
+        DISPLAY: :99
