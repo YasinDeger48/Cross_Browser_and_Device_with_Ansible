@@ -83,7 +83,7 @@ String browserType = Optional.ofNullable(System.getProperty("webdriver.browser")
 To run the tests locally, use Maven commands:
 
 ```bash
-mvn test
+mvn test -Dwebdriver.browser=webkit
 ```
 If you want to run the tests remotely using Ansible, run the Ansible playbook:
 
