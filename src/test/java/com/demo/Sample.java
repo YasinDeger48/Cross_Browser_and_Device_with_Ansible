@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 public class Sample {
     Playwright playwright;
     Browser browser;
@@ -35,7 +37,7 @@ public class Sample {
                 browser = playwright.webkit().launch();
                 break;
             default:
-                throw new IllegalArgumentException("Desteklenmeyen tarayıcı: " + browserType);
+                throw new IllegalArgumentException("Unsupported Browser: " + browserType);
         }
 
         page = browser.newPage();
@@ -52,7 +54,7 @@ public class Sample {
     public void test1() {
         page.navigate("http://playwright.dev");
         System.out.println(page.title());
-
+        assertThat(page).hasTitle("Fast and reliable end-to-end testing for modern web apps | Playwright");
     }
 
     @DisplayName("Sample Test 2")
@@ -60,6 +62,7 @@ public class Sample {
     public void test2() {
         page.navigate("https://junit.org/junit5");
         System.out.println(page.title());
+        assertThat(page).hasTitle("JUnit 5");
 
     }
 
