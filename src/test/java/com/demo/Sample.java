@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 public class Sample {
     Playwright playwright;
     Browser browser;
@@ -15,11 +17,9 @@ public class Sample {
 
     @BeforeEach
     public void make_setup() {
-        String browserType =
-                (System.getProperty("webdriver.browser")) == null ||
-                        (System.getProperty("webdriver.browser")).isEmpty()
-                        ? "chromium" :
-                        System.getProperty("webdriver.browser");
+        String browserType = Optional.ofNullable(System.getProperty("webdriver.browser"))
+                .filter(b -> !b.isEmpty())
+                .orElse("chromium");
 
 
         playwright = Playwright.create();
