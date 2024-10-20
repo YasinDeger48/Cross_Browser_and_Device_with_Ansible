@@ -24,8 +24,8 @@ This project is designed to run cross-browser and device tests written in Playwr
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YasinDeger48/Cross_Browser_and_Device_with_Ansible.git
-   cd Cross_Browser_and_Device_with_Ansible
+   git clone https://github.com/YasinDeger48/cross-browser-ansible.git
+   cd cross-browser-ansible
 
 2. **Install Maven dependencies:**:
    ```bash

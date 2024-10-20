@@ -1,0 +1,5 @@
+Ansible Ad Hoc
+
+/etc/ansible/hosts
+
+ansible [pattern] -m [module] -a"[module option]"
