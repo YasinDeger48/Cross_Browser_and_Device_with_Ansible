@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="RSESpgRR9JeO1OAexj6l">
+    <mxGraphModel dx="804" dy="1216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/ansible-icon-2048x2048-mc4z634w.png;" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pbs.twimg.com/profile_images/1318604600677527552/stk8sqYZ_400x400.png;" vertex="1" parent="1">
+          <mxGeometry x="570" y="20" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.ansible.com/images/ansible-pac-icon.png;" vertex="1" parent="1">
+          <mxGeometry x="305" y="400" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=5;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-2" target="BygqUkaS7_i4pyPcq4Aw-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="330" as="sourcePoint" />
+            <mxPoint x="550" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=5;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-1" target="BygqUkaS7_i4pyPcq4Aw-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="130" as="sourcePoint" />
+            <mxPoint x="490" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-7" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-prod.scdn6.secure.raxcdn.com/static/media/9198938f-8c47-5a0e-82d9-6db6a62cd3f7/DAM-44bae935-0169-476b-b599-6aa2c821529f/out/2568.020.png;" vertex="1" parent="1">
+          <mxGeometry x="100" y="419.79" width="119" height="110.43" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=5;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-7" target="BygqUkaS7_i4pyPcq4Aw-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219" y="480" as="sourcePoint" />
+            <mxPoint x="269" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="82" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-10" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/8/84/Mozilla_Firefox_3.5_logo.png;" vertex="1" parent="1">
+          <mxGeometry x="650" y="434" width="82" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/WebKit_logo_%282023%29.svg/1200px-WebKit_logo_%282023%29.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="646.5" y="560" width="89" height="96.3" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-3" target="BygqUkaS7_i4pyPcq4Aw-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="450" as="sourcePoint" />
+            <mxPoint x="550" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="455" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-3" target="BygqUkaS7_i4pyPcq4Aw-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="450" as="sourcePoint" />
+            <mxPoint x="550" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="BygqUkaS7_i4pyPcq4Aw-3" target="BygqUkaS7_i4pyPcq4Aw-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="465" y="485" as="sourcePoint" />
+            <mxPoint x="660" y="485" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="455" y="608" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-15" value="HOSTS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="129.5" y="382" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-16" value="PLAYBOOK" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-17" value="CHROMIUM NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="750" y="326" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-18" value="FIREFOX NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="750" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BygqUkaS7_i4pyPcq4Aw-19" value="WEBKIT NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="750" y="593.15" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
