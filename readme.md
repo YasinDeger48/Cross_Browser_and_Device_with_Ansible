@@ -74,7 +74,7 @@ String browserType = Optional.ofNullable(System.getProperty("webdriver.browser")
                 browser = playwright.webkit().launch();
                 break;
             default:
-                throw new IllegalArgumentException("Desteklenmeyen tarayıcı: " + browserType);
+                throw new IllegalArgumentException("Unsupported Browser: " + browserType);
         }
 
         page = browser.newPage(); 
