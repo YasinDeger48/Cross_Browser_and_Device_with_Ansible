@@ -2,7 +2,7 @@
 
 This project is designed to run cross-browser and device tests written in Playwright with Java, using an Ansible playbook to execute them across different browsers and devices. The setup allows automatic deployment and execution of tests on various environments.
 
-<img src="assets/ansible2.png" alt="chart" width="600" height="450">
+<img src="assets/ansible.png" alt="chart" width="600" height="450">
 
 ## Project Structure
 
