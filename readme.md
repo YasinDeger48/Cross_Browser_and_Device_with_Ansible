@@ -90,6 +90,47 @@ If you want to run the tests remotely using Ansible, run the Ansible playbook:
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 ```
+## PlayBook
+```bash
+---
+- name: Cross Browser Testing with Playwright
+  hosts: all
+  become: yes
+  vars_files:
+    - vars/sudo_password.yml
+  vars:
+    repo_url: "https://github.com/YasinDeger48/cross-browser-ansible.git"
+    browser_map:
+      server1: "chromium"
+      server2: "firefox"
+      server3: "webkit"
+
+  tasks:
+    - name: Java and Maven Installation
+      apt:
+        name:
+          - openjdk-17-jdk
+          - maven
+        state: present
+
+    - name: Clone Project
+      git:
+        repo: "{{ repo_url }}"
+        dest: /project
+        version: master
+        update: yes
+
+    - name: Playwright Dependencies
+      shell: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"
+      args:
+        chdir: /project
+
+    - name: Run Tests
+      shell: mvn test -Dwebdriver.browser={{ browser_map[inventory_hostname] }}
+      args:
+        chdir: /project
+
+```
 
 ## Contribution
 If you'd like to contribute to this project, please fork the repository and implement your changes before opening a pull request.

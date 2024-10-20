@@ -5,7 +5,7 @@
   vars_files:
     - vars/sudo_password.yml
   vars:
-    repo_url: "https://github.com/YasinDeger48/DemoTestForAnsible"
+    repo_url: "https://github.com/YasinDeger48/cross-browser-ansible.git"
     browser_map:
       server1: "chromium"
       server2: "firefox"
