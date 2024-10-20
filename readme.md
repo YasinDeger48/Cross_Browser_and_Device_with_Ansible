@@ -17,7 +17,7 @@ This project is designed to run cross-browser and device tests written in Playwr
 - Java 17 or higher
 - Maven 3.x
 - Ansible 2.x
-- Playwright Java version
+- Playwright version 1.4x.x or higher
 - SSH access to target devices for Ansible
 
 ## Installation Steps
