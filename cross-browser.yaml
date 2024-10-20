@@ -1,46 +1,37 @@
-
 ---
-- name: Cross Browser Testing with Ansible
+- name: Cross Browser Testing with Playwright
   hosts: all
   become: yes
+  vars_files:
+    - vars/sudo_password.yml
   vars:
     repo_url: "https://github.com/YasinDeger48/DemoTestForAnsible"
     browser_map:
-      host1: "chromium"
-      host2: "firefox"
-      host3: "webkit"
+      server1: "chromium"
+      server2: "firefox"
+      server3: "webkit"
 
   tasks:
-    - name: Docker Yükle
+    - name: Java and Maven Installation
       apt:
-        name: docker.io
+        name:
+          - openjdk-17-jdk
+          - maven
         state: present
 
-    - name: Docker Servisini Başlat
-      service:
-        name: docker
-        state: started
-        enabled: yes
-
-    - name: Git Repo'sunu Klonla
+    - name: Clone Project
       git:
         repo: "{{ repo_url }}"
         dest: /project
         version: master
         update: yes
 
-    - name: Dockerfile Oluştur
-      copy:
-        dest: /project/Dockerfile
-        content: |
-          FROM maven:3.8.5-openjdk-17
-          WORKDIR /app
-          COPY . .
-          RUN mvn clean install
+    - name: Playwright Dependencies
+      shell: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"
+      args:
+        chdir: /project
 
-    - name: Testleri Docker İçinde Çalıştır
-      shell: |
-        docker build -t java-test-runner /project
-        docker run --rm java-test-runner mvn test -Dwebdriver.browser={{ browser_map[inventory_hostname] }}
-      environment:
-        DISPLAY: :99
+    - name: Run Tests
+      shell: mvn test -Dwebdriver.browser={{ browser_map[inventory_hostname] }}
+      args:
+        chdir: /project
